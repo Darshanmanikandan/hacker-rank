@@ -45,7 +45,6 @@ int main()
 
     if (n_endptr == n_str || *n_endptr != '\0') { exit(EXIT_FAILURE); }
 
-    // Write Your Code Here
     if(n==1)
         printf("one\n");
     else if(n==2)

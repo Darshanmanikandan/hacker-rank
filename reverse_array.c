@@ -12,20 +12,23 @@ int main()
     reverse_array(arr ,n);
 
     for(int i=0;i<n;i++)
-        printf("%d\t",arr[i]);
+        printf("%d",*(arr + i));
+
+    free(arr);  // Free the dynamically allocated memory
 }
 void get_array_input(int *arr,int n)
 {
     for(int i=0;i<n;i++)
-         scanf("%d",&arr[i]);
+         scanf("%d",(arr + i));
 }
 
 void reverse_array(int *arr ,int n)
 {   
+    int temp;
     for(int i=0;i<n;i++){
-              temp=arr[i];
-              arr[i]=arr[n-1];
-              arr[n-1]=temp;
+              temp=*(arr + i);
+              *(arr + i)=*(arr + n-1);
+              *(arr + n-1)=temp;
               n--;
     }
 }

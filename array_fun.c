@@ -8,7 +8,7 @@ int main(){
     for(int i = 0;i < strlen(s);i++)
     {
         if (s[i] >= '0' && s[i] <= '9'){ 
-            freq[s[i]-'0']++;
+            freq[s[i]-'0']++;   //Updates the frequency count in freq using the digit as an index
         }
     }
     for (int i = 0 ; i < 10; i++)

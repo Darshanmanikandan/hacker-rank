@@ -27,6 +27,7 @@ int main()
         printf("something went wrong...");
     return 0;
 }
+
 void pattern_printing(int n)
 {   
     int limit = (n*2)-1 ;
